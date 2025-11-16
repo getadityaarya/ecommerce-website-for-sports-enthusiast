@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Payment Option</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+        button[type="submit"] {
+            width: 100%;
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Select Payment Option</h2>
+        <form id="payment-option-form">
+            <label>
+                <input type="radio" name="payment-option" value="credit-card" required>
+                Credit Card
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="payment-option" value="paypal">
+                QR Scan
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="payment-option" value="bank-transfer">
+                Cash on Delivery
+            </label>
+            <br>
+            <button type="submit">Proceed to Payment</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('payment-option-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var selectedOption = document.querySelector('input[name="payment-option"]:checked').value;
+            switch(selectedOption) {
+                case 'credit-card':
+                    window.location.href = 'creditcard.html';
+                    break;
+                case 'paypal':
+                    window.location.href = 'QRscan.html';
+                    break;
+                case 'bank-transfer':
+                    
+                    break;
+                default:
+                    alert('Please select a payment option.');
+            }
+        });
+    </script>
+</body>
+</html>

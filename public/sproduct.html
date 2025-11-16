@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>SPORTHEADS</title>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <section id="header">
+      <a href="#"><img src="Images/logo2.jpg" class="logo" alt="" /></a>
+
+      <div>
+        <ul id="navbar">
+          <li><a href="index.html">HOME</a></li>
+          <li><a class="active" href="shop.html">SHOP</a></li>
+          <li><a href="blog.html">BLOG</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+          <li id="loginLogoutLink"><a href="login.html" id="loginLogout">LOGIN</a></li>
+          <li id="lg-bag">
+            <a href="cart.html"><i class="far fa-shopping-bag"></i></a>
+          </li>
+          <a href="#" id="close"><i class="far fa-times"></i></a>
+        </ul>
+      </div>
+      <div id="mobile">
+        <a href="cart.html"><i class="far fa-shopping-bag"></i></a>
+        <i id="bar" class="fas fa-outdent"></i>
+      </div>
+    </section>
+
+    <section id="prodetails" class="section-p1">
+      <div class="single-pro-image">
+        <img id="MainImg"
+          src=""
+          width="100%"
+        />
+
+        <div class="small-img-group">
+          <div class="small-img-col">
+            <img id="pro_img2"
+              src=""
+              width="100%"
+              class="small-img"
+            />
+          </div>
+          <div class="small-img-col">
+            <img id="pro_img3"
+              src=""
+              width="100%"
+              class="small-img"
+            />
+          </div>
+          <div class="small-img-col">
+            <img id="pro_img4"
+              src=""
+              width="100%"
+              class="small-img"
+            />
+          </div>
+          <div class="small-img-col">
+            <img id="pro_img5"
+              src=""
+              width="100%"
+              class="small-img"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="single-pro-details">
+        <h4 id="pro_title"><b></b></h4>
+        <h2 id="pro_price"></h2>
+        <select name="" id="size">
+          <option>Select Size</option>
+          <option>S</option>
+          <option>M</option>
+          <option>L</option>
+          <option>XL</option>
+          <option>XXL</option>
+        </select>
+        <input id="qty" type="number" value="1" />
+        <button class="normal" onclick="addCart()">Add to cart</button>
+        <h4>Product description: <br /><br /></h4>
+        <span id="pro_desc">
+          <br /><br
+        /></span>
+      </div>
+    </section>
+
+    <section id="product1" class="section-p1">
+      <h2>Suggested For You</h2>
+      <p>New session starts with new Collections</p>
+      <div class="pro-container">
+        <div class="pro">
+          <img src="Images/product/tabletennis.jpg" alt="" />
+          <div class="des">
+            <span>killerspin</span>
+            <h5>JETSET 4 Premium Table Tennis Racket Set</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>Price - Rs.1,799</h4>
+          </div>
+          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+        <div class="pro">
+          <img src="Images/product/india-cricket-odi-jersey-men.avif" alt="" />
+          <div class="des">
+            <span>Adidas</span>
+            <h5>INDIA CRICKET ODI JERSEY MEN</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>Price - Rs.5,699</h4>
+          </div>
+          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+
+        <div class="pro">
+          <img src="Images/product/Skiingboard.jpg" alt="" />
+          <div class="des">
+            <span>Summit</span>
+            <h5>Summit Outdoor Ski Mini Sled Board</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>Price - Rs.9,999</h4>
+          </div>
+          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+
+        <div class="pro">
+          <img src="Images/product/Skateboard.webp" alt="" />
+          <div class="des">
+            <span>Jaspo</span>
+            <h5>Jaspo Black Duck Fibre Skateboard</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>Price - Rs.759</h4>
+          </div>
+          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="newsletter" class="section-p1 section-m1">
+      <div class="newstext">
+        <h4>Sign up for new Updates</h4>
+        <p>
+          Get E-mail updates about our latest shops and
+          <span>special offers.</span>
+        </p>
+      </div>
+      <div class="form">
+        <input type="text" placeholder="Your E-mail address:" />
+        <button class="normal">Sign Up</button>
+      </div>
+    </section>
+
+    <footer class="section-p1">
+      <div class="column">
+        <img class="logo" src="Images/logo2.jpg" />
+        <h4>Contact</h4>
+        <p>
+          <strong>Address: </strong> kaveri college of arts science and
+          commerce.
+        </p>
+        <p><strong>Phone no:</strong>8261086618</p>
+        <p><strong>Available:</strong> 9:00 - 6:00</p>
+        <div class="follow">
+          <h4>Follow us</h4>
+          <div class="icon">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-pinterest"></i>
+            <i class="fab fa-youtube"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <h4>About</h4>
+        <a href="#">About</a>
+        <a href="#">Delivery information</a>
+        <a href="#">Privacy policy</a>
+        <a href="#">Terms & Condition</a>
+        <a href="#">Contact us</a>
+      </div>
+
+      <div class="column">
+        <h4>My Account</h4>
+        <a href="#">Sign in</a>
+        <a href="#">My Wishlist</a>
+        <a href="#">View cart</a>
+        <a href="#">Track Order</a>
+        <a href="#">Help</a>
+      </div>
+
+      <div class="column install">
+        <h4>Install App</h4>
+        <p>From App Store or Google Play</p>
+        <div class="row">
+          <img src="Images/Payment/googleplay1.jpg" />
+          <img src="Images/Payment/playstore.jpg" />
+        </div>
+        <p>Secure Payment Gateways</p>
+        <img src="Images/Payment/UPI.jpg" />
+      </div>
+    </footer>
+
+    <footer>
+      <div class="copyright">
+        <p>&#169;2023 Sportheads.com, Inc</p>
+      </div>
+    </footer>
+
+    <script>
+      var MainImg = document.getElementById("MainImg");
+      var smalling = document.getElementsByClassName("small-img");
+
+      smalling[0].onclick = function () {
+        MainImg.src = smalling[0].src;
+      };
+      smalling[1].onclick = function () {
+        MainImg.src = smalling[1].src;
+      };
+      smalling[2].onclick = function () {
+        MainImg.src = smalling[2].src;
+      };
+      smalling[3].onclick = function () {
+        MainImg.src = smalling[3].src;
+      };
+    </script>
+
+    <script src="script.js"></script>
+    <script src="sproduct.js"></script>
+
+  </body>
+</html>

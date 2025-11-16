@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Address Management</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+  }
+
+  h2 {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  #addressForm {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 20px auto;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  button:hover {
+    background-color: #0056b3;
+  }
+
+  #proceedButton {
+    max-width: 200px;
+    margin: 0 auto;
+  }
+</style>
+</head>
+<body>
+
+<h2>Your Address</h2>
+
+<div id="addressForm">
+  <label for="line1">Line 1:</label>
+  <input type="text" id="line1" name="line1"><br>
+  <label for="line2">Line 2:</label>
+  <input type="text" id="line2" name="line2"><br>
+  <label for="city">City:</label>
+  <input type="text" id="city" name="city"><br>
+  <label for="country">Country:</label>
+  <input type="text" id="country" name="country"><br>
+  <label for="pin">PIN:</label>
+  <input type="text" id="pin" name="pin"><br>
+  <button onclick="addOrUpdateAddress()">Add/Update Address</button>
+</div>
+
+<div id="proceedButton">
+  <button onclick="proceed()">Place Order</button>
+</div>
+
+<script src="address.js"></script>
+
+</body>
+</html>
+
